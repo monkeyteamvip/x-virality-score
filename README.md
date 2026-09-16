@@ -50,13 +50,15 @@ Anyone can fork this and track a totally different niche (AI tools, memecoins, d
 
 ## Live board
 
-Permanent public dashboard (GitHub Pages — always on):
+**Your board:** on first run, scaffold from `board/` and publish to **your** GitHub Pages URL. That personal board is what digests refresh daily.
+
+**Demo / example only** (not the default for new importers):
 
 https://monkeyteamvip.github.io/kiosa-board/
 
-Repo that hosts the board: https://github.com/monkeyteamvip/kiosa-board
+Repo: https://github.com/monkeyteamvip/kiosa-board
 
-Updates when digests land. Free / experimental. No login required to view.
+Free / experimental. No login required to view.
 
 ## Privacy / experimental
 
