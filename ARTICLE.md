@@ -135,7 +135,7 @@ That is the energy the desk chases: formats that already work, rewritten in my l
 
 1. Open https://github.com/monkeyteamvip/x-virality-score
 2. Copy the example watchlist and put your accounts in config/watchlist.json
-3. Point a Grok Bot agent at AGENTS.md (or add the template: https://x.ai/bot/qG9mJ4EM-96hA3A1UNw4E)
+3. Point a Grok Bot agent at AGENTS.md (or add the template: https://x.ai/bot/BIvSSU3sukmkTpMeSnft-)
 4. Keep a read-only X session on the box browser
 5. Ask for a digest tomorrow before noon
 6. Open the board. Check X Score and Day Target
@@ -155,7 +155,7 @@ If you grab the bot from the marketplace or fork the repo, first run scaffolds *
 GitHub: https://github.com/monkeyteamvip/x-virality-score
 
 Bot Marketplace: Add the bot here:
-https://x.ai/bot/qG9mJ4EM-96hA3A1UNw4E
+https://x.ai/bot/BIvSSU3sukmkTpMeSnft-
 
 X Virality Score · @thegreatest_sv
 
