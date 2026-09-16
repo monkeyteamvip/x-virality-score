@@ -146,9 +146,11 @@ That is the energy the desk chases: formats that already work, rewritten in my l
 
 ## Live board + links
 
-Public free experimental board (updates when digests land):
+**Demo / case-study board** (this article's example — not yours by default):
 
 https://monkeyteamvip.github.io/kiosa-board/
+
+If you grab the bot from the marketplace or fork the repo, first run scaffolds **your own** dashboard from `board/` and helps you publish it to **your** GitHub Pages URL. Daily digests refresh that personal board.
 
 GitHub: https://github.com/monkeyteamvip/x-virality-score
 
