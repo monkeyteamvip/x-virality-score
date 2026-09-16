@@ -1,4 +1,4 @@
-# X Virality Score
+# Grok Bot X Virality Score
 
 A practical **X/Twitter virality desk** you run with Grok Bot agents.
 
@@ -47,6 +47,16 @@ cp config/watchlist.example.json config/watchlist.json
 - `accounts` - list of handles **without** `@`
 
 Anyone can fork this and track a totally different niche (AI tools, memecoins, design, local news). The scout logic stays the same.
+
+## Live board
+
+Permanent public dashboard (GitHub Pages — always on):
+
+https://monkeyteamvip.github.io/kiosa-board/
+
+Repo that hosts the board: https://github.com/monkeyteamvip/kiosa-board
+
+Updates when digests land. Free / experimental. No login required to view.
 
 ## Privacy / experimental
 
