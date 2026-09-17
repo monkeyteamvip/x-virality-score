@@ -1,42 +1,61 @@
 {
-  "brand_title": "Your X Virality Score",
-  "brand_handle": "@your_handle",
-  "title": "Daily X narrative digest — SAMPLE",
+  "title": "Daily X narrative digest — YYYY-MM-DD",
   "date": "2026-09-15",
   "timezone": "Europe/Moscow",
-  "updated": "2026-09-16T12:00:00+03:00",
-  "x_score": 72,
-  "day_target": {
-    "hits_goal": 5,
-    "hits_done": 3,
-    "views_goal": 50000,
-    "views_done": 31200,
-    "done": false
-  },
-  "stats": {
-    "hits": 3,
-    "star_hits": 1,
-    "total_views": 31200,
-    "outsiders": 20
-  },
-  "hits": [
+  "updated": "2026-09-16T12:05:31+03:00",
+  "brand_title": "Your X Virality Score",
+  "brand_handle": "@your_handle",
+  "hits": [],
+  "virals": [],
+  "outsiders": [],
+  "patterns": [
+    "example-pattern"
+  ],
+  "no_hits": [
     {
-      "display_name": "Example Creator",
-      "handle": "@example_creator",
-      "status_url": "https://x.com/example_creator/status/1",
-      "url": "https://x.com/example_creator/status/1",
-      "posted_at": "sample",
-      "views": 12000,
-      "views_label": "12K",
-      "likes": 80,
-      "reposts": 10,
-      "replies": 5,
-      "highlight": true,
-      "text": "SAMPLE original post text — replace with real scrapes.",
-      "draft_en": "SAMPLE English draft written from mined keywords/patterns.",
-      "video_tip": "8–12s vertical: one hook frame + one punchline cut."
+      "handle": "@example_quiet",
+      "reason": "No unpinned day original reached 5,000 views; highest observed was 1,200 views.",
+      "max_views": 1200
     }
   ],
-  "outsiders": [],
-  "synthesis": "Sample board only. Replace with your digest."
+  "virals_narrative": "Short outsider synthesis goes here.",
+  "narrative_synthesis": "Short outsider synthesis goes here.",
+  "virals_window": "last ~48h",
+  "virals_target": 20,
+  "hits_count": 0,
+  "outsiders_count": 0,
+  "previous_day": {
+    "date": "2026-09-14",
+    "hits_count": 0,
+    "total_views": 0,
+    "x_score": 0
+  },
+  "leaderboards": {
+    "as_of": "2026-09-15",
+    "week": {
+      "label": "Week",
+      "range": [
+        "2026-09-09",
+        "2026-09-15"
+      ],
+      "entries": []
+    },
+    "month": {
+      "label": "Month",
+      "range": [
+        "2026-09-01",
+        "2026-09-15"
+      ],
+      "entries": []
+    },
+    "days_included": []
+  },
+  "board_features": {
+    "count_up": true,
+    "live_pulse": true,
+    "theme_toggle": true,
+    "grok_ambient": true,
+    "week_month_boards": true,
+    "no_hits_reasons": true
+  }
 }
