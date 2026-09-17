@@ -39,3 +39,14 @@ bash board/publish-pages.example.sh
 ## 5. Demo link (not yours)
 
 https://monkeyteamvip.github.io/kiosa-board/ is a **case-study demo** only. Importers must publish their own Pages URL.
+
+## Board UI features
+
+- Count-up metrics on load/refresh
+- LIVE SIGNAL pulse in the header
+- Small CSS/SVG Grok Bot ambient animation (honors `prefers-reduced-motion`)
+- Day / Night theme toggle (`localStorage` key `xvs-theme`)
+- Week + Month leaderboards from `leaderboards` in `data.json`
+- No-hits block with prominent `@handles` and `reason` / `max_views`
+
+See the live demo schema on https://monkeyteamvip.github.io/kiosa-board/ (`data.json`).
