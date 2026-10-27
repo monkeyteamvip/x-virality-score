@@ -1,0 +1,63 @@
+{
+  "timezone": "UTC",
+  "min_views": 5000,
+  "star_views": 10000,
+  "lang": "en",
+  "accounts": [
+    {"handle": "Bitcoin_World20", "notes": "Verified 2026-10-27. About 12,000 followers. English Bitcoin analysis, active poster. Add more peers of your size. Famous crypto accounts checked the same day were far above 50,000 followers, so they are in trend_input_only instead of this list."}
+  ],
+  "trend_input_only": [
+    {"handle": "whale_alert", "notes": "Verified 2026-10-27. About 2,800,000 followers. Large-transaction bot. Aggregator. Trend signal only."},
+    {"handle": "WatcherGuru", "notes": "Verified 2026-10-27. About 4,900,000 followers. Crypto news account. Aggregator. Trend signal only."},
+    {"handle": "lookonchain", "notes": "Verified 2026-10-27. About 712,000 followers. On-chain alert account. Trend signal only."},
+    {"handle": "CryptoCred", "notes": "Verified 2026-10-27. About 836,000 followers. Too large for the hit list."},
+    {"handle": "inversebrah", "notes": "Verified 2026-10-27. About 710,000 followers. Too large for the hit list."},
+    {"handle": "HsakaTrades", "notes": "Verified 2026-10-27. About 600,000 followers. Too large for the hit list."},
+    {"handle": "Route2FI", "notes": "Verified 2026-10-27. About 302,000 followers. Too large for the hit list."},
+    {"handle": "sassal0x", "notes": "Verified 2026-10-27. About 297,000 followers. Anthony Sassano. Too large for the hit list."},
+    {"handle": "hasufl", "notes": "Verified 2026-10-27. About 263,000 followers. Hasu. Too large for the hit list."},
+    {"handle": "DeFi_Dad", "notes": "Verified 2026-10-27. About 183,000 followers. Too large for the hit list."},
+    {"handle": "DefiIgnas", "notes": "Verified 2026-10-27. About 164,000 followers. Ignas. Too large for the hit list."}
+  ],
+  "keyword_domain_terms": ["bitcoin", "ethereum", "solana", "defi", "onchain", "airdrop", "stablecoin", "wallet"],
+  "x_keywords": {
+    "max": 16,
+    "core": [
+      "Bitcoin",
+      "Ethereum",
+      "Solana",
+      "ETF",
+      "stablecoin",
+      "onchain",
+      "airdrop",
+      "DeFi",
+      "memecoin",
+      "funding rate",
+      "liquidation",
+      "whale",
+      "L2",
+      "restaking",
+      "perp",
+      "wallet"
+    ],
+    "query_override": {
+      "ETF": "(ETF OR \"spot ETF\") (Bitcoin OR Ethereum OR crypto)",
+      "L2": "(L2 OR \"layer 2\") (Ethereum OR crypto OR rollup)",
+      "whale": "(whale OR \"whale alert\") (Bitcoin OR crypto OR wallet)"
+    }
+  },
+  "experiment": {
+    "enabled": false,
+    "handle": "your_handle",
+    "user_id": "",
+    "start": "2026-11-01",
+    "end": "2026-11-07",
+    "baseline_days": 30,
+    "trend_threshold": 35,
+    "min_n": 5,
+    "min_age_h": 24,
+    "hypothesis": "Trend posts beat non-trend posts of the same format"
+  },
+  "board_url": "https://<your-github-user>.github.io/<your-board-repo>/",
+  "_comment": "Optional crypto starter. The accounts list is intentionally short: public search on 2026-10-27 did not turn up a full set of crypto peers under about 50,000 followers that were clearly worth recommending. Add your own 15-30 peers. Do not guess handles. See docs/WATCHLIST.md."
+}

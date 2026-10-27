@@ -674,7 +674,7 @@ footer{margin-top:52px;padding-top:22px;border-top:1px solid var(--line);color:v
     <div class="section-head reveal" id="trend-kw-head" hidden><div><div class="section-index">07b / trend keywords</div><h2>Trend keywords · 24h</h2></div><div class="section-note">ranked from day hits, last 24h, outsiders and the brief · woven into drafts</div></div>
     <section class="tags" id="trend-kw" hidden></section>
 
-    <div class="section-head reveal"><div><div class="section-index">08 / outside radar</div><h2>AI virals · last 48h</h2></div><div class="section-note" id="viral-count">20 outsider signals</div></div>
+    <div class="section-head reveal"><div><div class="section-index">08 / outside radar</div><h2 id="virals-title">Outsiders · last 48h</h2></div><div class="section-note" id="viral-count">20 outsider signals</div></div>
     <section class="grid" id="virals"></section>
     <div class="narrative" id="virals-narrative" hidden></div>
 
@@ -759,7 +759,8 @@ function resolveThemeFromData(d){
 }
 function topBadge(r){return r&&r.top10_rank?`<span class="vbadge vb-trend top10-badge">TOP-10 · #${num(r.top10_rank)}</span>`:''}
 function sqHtml(r){if(!r)return'';if(r.excluded_reason)return`<span class="sq" title="not counted">${esc(r.excluded_reason)}</span>`;if(r.self_quote)return`<span class="sq" title="self-quote: counts like any original">${esc(r.self_quote_label||'self-quote')}</span>`;return''}
-function draftBlock(h,draftId){const draft=h.draft_en||'';if(!draft)return h.original_en?`<details class="orig-block"><summary>Original · EN</summary><pre>${esc(h.original_en)}</pre></details>`:'';return`<div class="draft-block"><div class="draft-head"><span class="draft-label">Draft · EN${h.top10_rank?' · TOP-10 #'+num(h.top10_rank):''}</span><button type="button" class="copy-btn" data-draft-id="${draftId}">COPY DRAFT</button></div><pre class="draft-text" id="${draftId}">${esc(draft)}</pre>${(h.draft_keywords||[]).length?`<div class="kw-row"><span class="kw-label">keywords:</span>${h.draft_keywords.map(k=>`<span class="kw-chip">${esc(k)}</span>`).join('')}${h.draft_check?`<span class="kw-meta">overlap 4-gram ${Math.round(num(h.draft_check.g4_overlap)*100)}%</span>`:''}</div>`:''}${h.original_en?`<details class="orig-block"><summary>Original · EN</summary><pre>${esc(h.original_en)}</pre></details>`:''}</div>`}
+let BOARD_LANG='EN';
+function draftBlock(h,draftId){const draft=h.draft_en||'';if(!draft)return h.original_en?`<details class="orig-block"><summary>Original · ${BOARD_LANG}</summary><pre>${esc(h.original_en)}</pre></details>`:'';return`<div class="draft-block"><div class="draft-head"><span class="draft-label">Draft · ${BOARD_LANG}${h.top10_rank?' · TOP-10 #'+num(h.top10_rank):''}</span><button type="button" class="copy-btn" data-draft-id="${draftId}">COPY DRAFT</button></div><pre class="draft-text" id="${draftId}">${esc(draft)}</pre>${(h.draft_keywords||[]).length?`<div class="kw-row"><span class="kw-label">keywords:</span>${h.draft_keywords.map(k=>`<span class="kw-chip">${esc(k)}</span>`).join('')}${h.draft_check?`<span class="kw-meta">overlap 4-gram ${Math.round(num(h.draft_check.g4_overlap)*100)}%</span>`:''}</div>`:''}${h.original_en?`<details class="orig-block"><summary>Original · ${BOARD_LANG}</summary><pre>${esc(h.original_en)}</pre></details>`:''}</div>`}
 function vbClass(v){v=String(v||'');return /^(trend|тренд)$/.test(v)?'vb-trend':/^(visual|визуал)$/.test(v)?'vb-vis':/^(author|автор)/.test(v)?'vb-auth':'vb-other'}
 function whyLine(w){if(!w)return'';return`<div class="why-hit-line"><span>trend match</span><span class="mbar"><i style="width:${num(w.trend_match)}%"></i></span><b>${num(w.trend_match)}%</b><span class="vbadge ${vbClass(w.verdict)}">${esc(w.verdict)}</span>${(w.matched_keywords||[]).slice(0,5).map(k=>`<span class="kw-chip">${esc(k)}</span>`).join('')}</div>`}
 function kfmt(n){n=num(n);return n>=1e6?(n/1e6).toFixed(2)+'M':n>=1e3?(n/1e3).toFixed(1)+'K':String(n)}
@@ -914,7 +915,7 @@ function renderYourDay(youRank, handle){
     }else{
       const link=youRank.best_url?` · <a href="${esc(youRank.best_url)}" target="_blank" rel="noopener">open best post ↗</a>`:'';
       const rk=youRank.rank_among_watchlist!=null?` · rank #${youRank.rank_among_watchlist}/${youRank.total_accounts||'?'} `:'';
-      meta.innerHTML=`Today <b style="color:var(--text)">${esc(fmtBestTotal(bv,tv))}</b> best / total${rk}${link}`;
+      meta.innerHTML=`This day <b style="color:var(--text)">${esc(fmtBestTotal(bv,tv))}</b> best / total${rk}${link}`;
     }
   }
   const v=num(bv);
@@ -964,6 +965,7 @@ function staggerCards(rootSel){
 async function boot(){
   const res=await fetch('./data.json?ts='+Date.now());if(!res.ok)throw new Error('data.json '+res.status);const d=await res.json();
   resolveThemeFromData(d);
+  BOARD_LANG=String(d.lang||'en').toLowerCase()==='ru'?'RU':'EN';
   const brand=applyBrand(d);
   const op={handle:brand.handle, name:brand.name, ...(d.operator||{})};
   const hits=Array.isArray(d.hits)?d.hits:[];const virals=Array.isArray(d.virals)?d.virals:(Array.isArray(d.outsiders)?d.outsiders:[]);
@@ -992,8 +994,8 @@ async function boot(){
     const format = formatter || (x=>String(Math.round(x)));
     countUp(el, num(v), {duration:1000+i*80, format});
   });
-  const tz=d.timezone||'Europe/Moscow';
-  const updated=(()=>{if(!d.updated)return '—'; const s=String(d.updated); const hasTime=/T\d|\d{2}:\d{2}/.test(s); const dt=new Date(hasTime?s:s+'T12:00:00+03:00'); try{return dt.toLocaleString('en-GB',{timeZone:tz,day:'2-digit',month:'short',hour:'2-digit',minute:'2-digit',hour12:false})}catch(e){return dt.toLocaleString('en-GB',{day:'2-digit',month:'short',hour:'2-digit',minute:'2-digit',hour12:false})}})();
+  const tz=d.timezone||'UTC';
+  const updated=(()=>{if(!d.updated)return '—'; const s=String(d.updated); const hasTime=/T\d|\d{2}:\d{2}/.test(s); const dt=new Date(hasTime?s:s+'T12:00:00Z'); try{return dt.toLocaleString('en-GB',{timeZone:tz,day:'2-digit',month:'short',hour:'2-digit',minute:'2-digit',hour12:false})}catch(e){return dt.toLocaleString('en-GB',{day:'2-digit',month:'short',hour:'2-digit',minute:'2-digit',hour12:false})}})();
   document.getElementById('meta').textContent=`${d.date||'—'} · updated ${updated} · ${tz}`;
   document.getElementById('chart-scale').textContent=`peak ${fmt(maxViews)} · ${hits.length} signals`;
   renderSparkline(hits);
@@ -1023,6 +1025,7 @@ async function boot(){
   bindCopy(document.getElementById('hits'));
   staggerCards('#hits .card');
   document.getElementById('patterns').innerHTML=(d.patterns||[]).map(p=>`<span class="tag">${esc(p)}</span>`).join('');document.getElementById('viral-count').textContent=`${virals.length} outsider signals`;
+  const vt=document.getElementById('virals-title'); if(vt) vt.textContent=d.virals_title||'Outsiders · last 48h';
   document.getElementById('virals').innerHTML=virals.map((v,i)=>{const pending=!v.url||v.url==='#';return`<article class="card${pending?' pending':''}"><div class="card-top"><div class="identity"><div class="rank">${String(i+1).padStart(2,'0')}</div><div><div class="name">${esc(v.name||v.display_name||'Unknown')}</div><div class="handle">${esc(v.handle||'')}${sqHtml(v)}</div></div></div><div class="views-big">${esc(v.views_label||fmt(v.views))}<small>views</small></div></div>${topBadge(v)}<div class="hook">${esc(v.hook||v.text||'')}</div>${whyLine(v.why_hit)}${draftBlock(v,'vdraft-'+i)}<a class="post-link${pending?' disabled':''}" href="${esc(v.url||'#')}" target="_blank" rel="noopener">${pending?'PENDING SCRAPE':'OPEN POST ↗'}</a></article>`}).join('');
   bindCopy(document.getElementById('virals'));
   staggerCards('#virals .card');

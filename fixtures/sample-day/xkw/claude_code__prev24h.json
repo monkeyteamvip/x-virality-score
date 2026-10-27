@@ -1,0 +1,6 @@
+{
+  "data": [
+    {"id": "511", "text": "Older Claude Code note", "author_id": "u1", "public_metrics": {"impression_count": 4000}}
+  ],
+  "includes": {"users": [{"id": "u1", "username": "sample_builder"}]}
+}

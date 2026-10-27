@@ -1,0 +1,28 @@
+{
+  "timezone": "UTC",
+  "min_views": 5000,
+  "star_views": 10000,
+  "lang": "en",
+  "accounts": ["sample_builder", "sample_maker", "sample_writer", "sample_lab"],
+  "trend_input_only": ["sample_aggregator"],
+  "keyword_domain_terms": ["agent", "agents", "prompt", "injection", "claude", "code", "checklist"],
+  "x_keywords": {
+    "max": 2,
+    "core": ["Claude Code", "prompt injection"],
+    "query_override": {}
+  },
+  "experiment": {
+    "enabled": true,
+    "handle": "your_handle",
+    "user_id": "10001",
+    "start": "2026-10-21",
+    "end": "2026-10-26",
+    "baseline_days": 30,
+    "trend_threshold": 35,
+    "min_n": 1,
+    "min_age_h": 24,
+    "hypothesis": "Trend posts beat non-trend posts of the same format"
+  },
+  "board_url": "https://your-github-user.github.io/x-virality-board/",
+  "_comment": "Offline sample only. Handles and posts are fictional. The default template is config/watchlist.example.json."
+}

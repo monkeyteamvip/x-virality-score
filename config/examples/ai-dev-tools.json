@@ -1,0 +1,61 @@
+{
+  "timezone": "UTC",
+  "min_views": 5000,
+  "star_views": 10000,
+  "lang": "en",
+  "accounts": [
+    {"handle": "browserbase", "notes": "Verified 2026-10-27. About 22,000 followers. Browserbase, agents that use the web."},
+    {"handle": "browser_use", "notes": "Verified 2026-10-27. About 49,000 followers. Browser Use."},
+    {"handle": "calebporzio", "notes": "Verified 2026-10-27. About 53,000 followers. Caleb Porzio, Alpine.js and Livewire. Slightly above the 50k peer band."},
+    {"handle": "awesomekling", "notes": "Verified 2026-10-27. About 65,000 followers. Andreas Kling, Ladybird browser. Move to trend_input_only if this is much larger than you."},
+    {"handle": "andreasklinger", "notes": "Verified 2026-10-27. About 71,000 followers. Andreas Klinger, builder and investor. Above the usual peer band."},
+    {"handle": "firecrawl", "notes": "Verified 2026-10-27. About 94,000 followers. Firecrawl, web data for agents. Above the usual peer band."}
+  ],
+  "trend_input_only": [
+    {"handle": "ollama", "notes": "Verified 2026-10-27. About 187,000 followers. Too large for the hit list. Trend signal only."},
+    {"handle": "swyx", "notes": "Verified 2026-10-27. About 208,000 followers. Trend signal only."},
+    {"handle": "goodside", "notes": "Verified 2026-10-27. About 237,000 followers. Riley Goodside. Trend signal only."},
+    {"handle": "simonw", "notes": "Verified 2026-10-27. About 246,000 followers. Simon Willison. Trend signal only."},
+    {"handle": "LangChain", "notes": "Verified 2026-10-27. About 272,000 followers. Company account. Trend signal only."}
+  ],
+  "keyword_domain_terms": ["agent", "agents", "prompt", "model", "repo", "workflow", "mcp", "llm"],
+  "x_keywords": {
+    "max": 16,
+    "core": [
+      "AI agents",
+      "Claude Code",
+      "ChatGPT",
+      "OpenAI",
+      "Anthropic",
+      "Gemini",
+      "Grok",
+      "MCP",
+      "Codex",
+      "vibe coding",
+      "open source",
+      "prompt injection",
+      "AI video",
+      "LLM",
+      "Cursor",
+      "second brain"
+    ],
+    "query_override": {
+      "MCP": "(MCP OR \"MCP server\") (AI OR agent OR server)",
+      "Codex": "(Codex OR \"OpenAI Codex\") (OpenAI OR coding OR agent)"
+    }
+  },
+  "experiment": {
+    "enabled": false,
+    "handle": "your_handle",
+    "user_id": "",
+    "start": "2026-11-01",
+    "end": "2026-11-07",
+    "baseline_days": 30,
+    "trend_threshold": 35,
+    "min_n": 5,
+    "min_age_h": 24,
+    "hypothesis": "Trend posts beat non-trend posts of the same format"
+  },
+  "board_url": "https://<your-github-user>.github.io/<your-board-repo>/",
+  "_comment": "Optional AI/dev-tools starter. Not the default install. Add peers until you have about 15-30 accounts near your size. Handles were public X accounts on 2026-10-27. See docs/WATCHLIST.md."
+}

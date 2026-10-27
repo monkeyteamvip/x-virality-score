@@ -1,8 +1,9 @@
 {
-  "title": "Daily X narrative digest — YYYY-MM-DD",
+  "title": "Daily X narrative digest - YYYY-MM-DD",
   "date": "2026-09-15",
-  "timezone": "Europe/Moscow",
-  "updated": "2026-09-16T12:05:31+03:00",
+  "timezone": "UTC",
+  "updated": "2026-09-16T12:05:31Z",
+  "virals_title": "Outsiders · last 48h",
   "brand_title": "Your X Virality Score",
   "brand_handle": "@your_handle",
   "hits": [],

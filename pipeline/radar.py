@@ -317,6 +317,7 @@ def build(D: str, need_ideas=True):
         print("RADAR REJECTED:\n  " + "\n  ".join(errs), file=sys.stderr)
         sys.exit(3)
 
+    d["lang"] = str(cfg.get("lang") or "en").lower()
     d["trend_radar"] = {
         "date": D, "title": "Trends and post ideas",
         "window": {"end": end.isoformat(), "label24": f"{s24:%d.%m %H:%M} - {end:%d.%m %H:%M} UTC",

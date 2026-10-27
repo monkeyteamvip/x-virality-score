@@ -21,7 +21,8 @@ Paths (env overrides): `XVS_DIGEST_ROOT` (default `digests/`), `XVS_DATA` (defau
 ## Config keys (`config/watchlist.json`)
 
 - `trend_input_only`: handles used only as trend signals (e.g. a big aggregator).
-- `lang`: `en` or `ru` for verdict labels and the ping.
+- `lang`: `en` (default) or `ru` for verdict labels and the ping. English is what a new install produces. Set `ru` only when Russian labels are wanted, then re-run the day so the radar line is rebuilt in that language.
+- `virals_title` on `board/data.json` (optional): outsiders section heading. Omitted, the page shows `Outsiders · last 48h`.
 - `keyword_domain_terms`: lowercase niche words that count as keywords.
 - `x_keywords`: `core` (~16 keywords), `query_override`, `max`.
 - `experiment`: `enabled`, `handle`, `user_id`, `start`, `end`, `baseline_days`, `trend_threshold` (35), `min_n` (5), `min_age_h` (24), `hypothesis`.

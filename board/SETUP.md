@@ -23,6 +23,7 @@ Sections added by the trend pipeline (`pipeline/`, see `docs/pipeline.md`) appea
   - `operator.handle` / `operator.name` / `operator.profile_url` — YOU highlighting on the roster and leaderboards
   - `timezone` — label in the header meta line
   - optional `ui.default_theme`: `"night"` or `"day"` (first visit only; a visitor's toggle wins via `localStorage` key `xvs-theme`)
+  - optional `virals_title` — outsiders heading. The page defaults to `Outsiders · last 48h` when this is omitted. Set it if you want a niche label.
 
 **Result you should see.** `data.json` names you. Both real files are gitignored (see the repo `.gitignore`).
 

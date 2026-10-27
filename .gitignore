@@ -16,3 +16,6 @@ cookies.txt
 
 # Daily run data (raw X fetches, drafts, experiment history). Personal, keep local.
 digests/
+
+# Local sample-day preview written by scripts/smoke_day.sh
+board/.smoke-preview/

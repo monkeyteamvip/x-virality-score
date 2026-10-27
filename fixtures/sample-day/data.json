@@ -1,0 +1,137 @@
+{
+  "title": "Daily X narrative digest - 2026-10-26",
+  "date": "2026-10-26",
+  "timezone": "UTC",
+  "updated": "2026-10-26T18:00:00Z",
+  "virals_title": "Outsiders · last 48h",
+  "brand_title": "Your X Virality Score",
+  "brand_handle": "@your_handle",
+  "hits": [
+    {
+      "name": "Sample Builder",
+      "handle": "@sample_builder",
+      "views": 42000,
+      "url": "https://x.com/sample_builder/status/1001",
+      "posted_at": "2026-10-26T14:00:00Z",
+      "media": "video",
+      "hook": "A Claude Code checklist caught a poisoned README before lunch.",
+      "text": "Claude Code just shipped a checklist for prompt injection inside agent repos. I ran it on three codebases before lunch and it flagged a poisoned README.",
+      "video_tip": "8-12s screen capture: open the repo, run the checklist, hard-cut to the flagged README line."
+    },
+    {
+      "name": "Sample Maker",
+      "handle": "@sample_maker",
+      "views": 28000,
+      "url": "https://x.com/sample_maker/status/1002",
+      "posted_at": "2026-10-26T13:10:00Z",
+      "media": "image",
+      "hook": "Put the prompt injection test in the first pull request.",
+      "text": "Teams keep pasting secrets into Claude Code. A prompt injection test belongs in the first pull request, not the postmortem.",
+      "video_tip": "Still image of a pull request comment that says the check ran, with the secret line redacted."
+    },
+    {
+      "name": "Sample Writer",
+      "handle": "@sample_writer",
+      "views": 15000,
+      "url": "https://x.com/sample_writer/status/1003",
+      "posted_at": "2026-10-26T12:20:00Z",
+      "media": "text",
+      "self_quote": true,
+      "self_quote_label": "self-quote",
+      "hook": "The useful setup is a rules file plus one check.",
+      "text": "The useful Claude Code setup is boring: one rules file, short tasks, and a prompt injection check on every README the agent reads.",
+      "video_tip": "Text card, three lines, no music: rules file, short task, README check."
+    },
+    {
+      "name": "Sample Lab",
+      "handle": "@sample_lab",
+      "views": 9000,
+      "url": "https://x.com/sample_lab/status/1004",
+      "posted_at": "2026-10-26T11:05:00Z",
+      "media": "text",
+      "hook": "The failures came from a cloned repo, not the model.",
+      "text": "We logged every Claude Code run this week. The failures were prompt injection from a cloned repo, not the model.",
+      "video_tip": "Split screen: model settings unchanged on the left, the cloned README on the right."
+    },
+    {
+      "name": "Sample Aggregator",
+      "handle": "@sample_aggregator",
+      "views": 200000,
+      "url": "https://x.com/sample_aggregator/status/3001",
+      "posted_at": "2026-10-26T16:00:00Z",
+      "media": "text",
+      "hook": "Link roundup. This account is trend input only.",
+      "text": "Roundup: Claude Code, prompt injection, and twenty other links from today."
+    }
+  ],
+  "virals": [
+    {
+      "name": "Sample Outsider",
+      "handle": "@sample_outsider",
+      "views": 61000,
+      "url": "https://x.com/sample_outsider/status/2001",
+      "posted_at": "2026-10-26T15:30:00Z",
+      "media": "video",
+      "hook": "People are treating the check like a lint rule.",
+      "text": "Claude Code users are treating prompt injection like a lint rule. That is the only habit that survived the week.",
+      "video_tip": "Talking-head open, then a lint-style red underline on a README line."
+    },
+    {
+      "name": "Sample Guest",
+      "handle": "@sample_guest",
+      "views": 12000,
+      "url": "https://x.com/sample_guest/status/2002",
+      "posted_at": "2026-10-26T10:40:00Z",
+      "media": "image",
+      "hook": "Read the install notes before you trust the agent.",
+      "text": "If your agent is Claude Code, read the README before you trust it. Prompt injection hides in the install notes.",
+      "video_tip": "Zoom into install notes and highlight one sentence that is not an install step."
+    }
+  ],
+  "patterns": ["Claude Code", "prompt injection"],
+  "no_hits": [
+    {
+      "handle": "@sample_quiet",
+      "reason": "No unpinned day original reached 5,000 views; highest observed was 1,200 views.",
+      "max_views": 1200
+    }
+  ],
+  "virals_narrative": "Outsiders rewarded a checklist habit around the same two phrases as the watchlist.",
+  "virals_window": "last ~48h",
+  "virals_target": 20,
+  "last24h": {"end": "2026-10-26T18:00:00+00:00", "posts": []},
+  "previous_day": {
+    "date": "2026-10-25",
+    "hits_count": 2,
+    "total_views": 20000,
+    "x_score": 20
+  },
+  "leaderboards": {
+    "as_of": "2026-10-26",
+    "tracking_start": "2026-10-20",
+    "days_included": ["2026-10-20", "2026-10-21", "2026-10-22", "2026-10-23", "2026-10-24", "2026-10-25", "2026-10-26"],
+    "week": {"label": "Rolling week", "range": ["2026-10-20", "2026-10-26"], "entries": []},
+    "month": {"label": "October 2026", "range": ["2026-10-20", "2026-10-26"], "entries": []}
+  },
+  "operator": {
+    "handle": "@your_handle",
+    "name": "Your Name",
+    "profile_url": "https://x.com/your_handle"
+  },
+  "ui": {"default_theme": "night"},
+  "day_roster": [
+    {"handle": "@sample_outsider", "name": "Sample Outsider", "views": 61000, "total_views": 61000, "hit": true},
+    {"handle": "@sample_builder", "name": "Sample Builder", "views": 42000, "total_views": 42000, "hit": true},
+    {"handle": "@your_handle", "name": "Your Name", "views": 8000, "total_views": 8000, "hit": true, "is_you": true}
+  ],
+  "you_rank": {
+    "best_views": 8000,
+    "total_views": 8000,
+    "rank_among_watchlist": 3,
+    "total_accounts": 6,
+    "vs_5k": "done",
+    "vs_10k": "pending",
+    "best_url": "https://x.com/your_handle/status/1"
+  },
+  "trend_input_only_posts": []
+}

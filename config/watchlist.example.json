@@ -1,5 +1,5 @@
 {
-  "timezone": "Europe/Moscow",
+  "timezone": "UTC",
   "min_views": 5000,
   "star_views": 10000,
   "lang": "en",
@@ -55,5 +55,5 @@
     "hypothesis": "Trend posts beat non-trend posts of the same format"
   },
   "board_url": "https://<your-github-user>.github.io/<your-board-repo>/",
-  "_comment": "Copy this file to config/watchlist.json (gitignored). Replace the placeholders with handles you track, without @. Optional object form also works: {\"handle\": \"example_account\", \"notes\": \"why you watch them\"}. trend_input_only = accounts (e.g. a big aggregator) whose posts are fetched and used ONLY as trend signals: never shown as hits, outsiders, leaderboard rows or drafts. lang = en|ru for board/ping labels. experiment = optional trend vs non-trend tracker of YOUR own posts (fill handle + numeric user_id, set enabled true). x_keywords.core = ~16 niche keywords for the X keyword table (24h vs previous 24h, sampled search)."
+  "_comment": "Copy this file to config/watchlist.json (gitignored). Replace the placeholders with handles you track, without @. Set timezone to your IANA zone (America/New_York, Europe/London, Asia/Tokyo, ...). UTC is only the neutral starter. Optional object form also works: {\"handle\": \"example_account\", \"notes\": \"why you watch them\"}. trend_input_only = accounts (for example a big aggregator) whose posts are fetched and used ONLY as trend signals: never shown as hits, outsiders, leaderboard rows or drafts. lang = en (default) or ru for verdict labels and the ping. experiment = optional trend vs non-trend tracker of YOUR own posts (fill handle + numeric user_id, set enabled true). x_keywords.core = about 16 niche keywords for the X keyword table (24h vs previous 24h, sampled search). Niche starter lists: config/examples/ and docs/WATCHLIST.md."
 }

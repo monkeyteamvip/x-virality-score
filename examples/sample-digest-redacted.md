@@ -1,12 +1,12 @@
-# Daily X narrative digest · 15 сент 2026
-Timezone: Europe/Moscow · originals only · ≥5k views (★ ≥10k) · watchlist 18 accounts
+# Daily X narrative digest · 15 Sep 2026
+Timezone: UTC · originals only · ≥5k views (★ ≥10k) · watchlist 18 accounts
 
 ## Watchlist hits · 14
 
-### 1. Example Creator · `@example_handle` · **25 тыс. views** ★
+### 1. Example Creator · `@example_handle` · **25K views** ★
 🔗 https://x.com/example_handle/status/000
 ❤️ 123 · 🔁 2 · 💬 10
-🕒 19 часов назад
+🕒 19 hours ago
 
 **Hook:** Sam Altman face when he learns people are using GPT-6 Astra as a permanent memory for every wallet that ever launched a token on Robinhood Chain — one line, one meme, 25K views.
 
@@ -24,7 +24,7 @@ If your edge was "I saw it first," that edge just got a second brain with infini
 
 The meme hits because the fear is real: once Astra keeps the ledger, nobody is anonymous on that rail again.
 
-**video_tip:** 8–12s reaction meme: Altman still → Astra HUD overlay listing wallet→token launches → hard cut to Robinhood Chain stamp.
+**video_tip:** 8-12s reaction meme: Altman still, then an Astra HUD overlay listing wallet to token launches, then a hard cut to a Robinhood Chain stamp.
 **media:** 8-second meme video; quoted Fox post with a 1:59 video.
 
 ---
@@ -32,7 +32,7 @@ The meme hits because the fear is real: once Astra keeps the ledger, nobody is a
 ### 2. Example Creator · `@example_handle` · **15,491 views** ★
 🔗 https://x.com/example_handle/status/000
 ❤️ 154 · 🔁 29 · 💬 21 · 🔖 115
-🕒 7:25 AM · 15 сент. 2026 г.
+🕒 7:25 AM · 15 Sep 2026
 
 **Hook:** Someone uploaded a real fly brain to GitHub — 166,700 neurons, zero ML — and it is trading crypto, dodging cursors, failing DOOM, jumping Mario, and driving a six-legged robot right now.
 

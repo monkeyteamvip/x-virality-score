@@ -1,0 +1,77 @@
+{
+  "ideas": [
+    {
+      "title": "Run the prompt injection check before the agent reads the repo",
+      "topic": "prompt injection",
+      "keywords": ["prompt injection"],
+      "format": "screencast",
+      "visual_type": "screencast",
+      "visual": "Screen recording of a README with a hidden line, the agent starting to follow it, then the check that stops it.",
+      "angle": "A practical prompt injection check before an agent reads a cloned repo.",
+      "hook_en": "Your agent reads every README. Run this prompt injection check first.",
+      "why": "Sample posts about prompt injection cleared the view floor on this day."
+    },
+    {
+      "title": "Show the Claude Code checklist in one terminal",
+      "topic": "Claude Code",
+      "keywords": ["Claude Code"],
+      "format": "video",
+      "visual_type": "video",
+      "visual": "Short screen video of the checklist opening, one repo, one pass, one result.",
+      "angle": "Open Claude Code and show the checklist as the first step, not a follow-up.",
+      "hook_en": "Claude Code gets useful when the checklist runs before the task, not after.",
+      "why": "Claude Code sits in the sample keyword table for this day."
+    },
+    {
+      "title": "One image of the failure mode",
+      "topic": "prompt injection",
+      "keywords": ["prompt injection"],
+      "format": "image",
+      "visual_type": "image",
+      "visual": "Annotated screenshot of install notes with the hidden instruction circled.",
+      "angle": "A single image that shows a prompt injection hiding in install notes.",
+      "hook_en": "The prompt injection that slips in is usually a README, not a model bug.",
+      "why": "The sample outsiders treated this as a lint habit."
+    },
+    {
+      "title": "A meme for the boring setup",
+      "topic": "Claude Code",
+      "keywords": ["Claude Code"],
+      "format": "meme",
+      "visual_type": "meme",
+      "visual": "Two-panel meme, messy chat on the left, a finished checklist on the right.",
+      "angle": "A meme that contrasts a messy chat with a Claude Code checklist that already ran.",
+      "hook_en": "Claude Code users who look fast are usually just running a boring checklist.",
+      "why": "The watchlist hits favored a boring setup over a new model claim."
+    },
+    {
+      "title": "Carousel of the checks",
+      "topic": "prompt injection",
+      "keywords": ["prompt injection"],
+      "format": "carousel",
+      "visual_type": "carousel",
+      "visual": "Three slides: the README, the check, and the result.",
+      "angle": "A carousel that walks through a prompt injection pass without adding new claims.",
+      "hook_en": "Save this prompt injection pass and reuse it on the next repo.",
+      "why": "A checklist fits a carousel better than a single line of text."
+    }
+  ],
+  "articles": [
+    {
+      "title": "What a Claude Code checklist changes on day one",
+      "thesis": "The gain is a boring setup that catches a bad README before the agent runs.",
+      "outline": ["What the checklist covers", "Where people skip it", "A first-repo walkthrough"],
+      "keywords": ["Claude Code"],
+      "visual": "Cover image of a terminal checklist next to a README.",
+      "why": "Claude Code is in the sample X keyword table."
+    },
+    {
+      "title": "Treat prompt injection like a lint rule",
+      "thesis": "The posts that traveled named one check, not a new model.",
+      "outline": ["The failure mode", "The check", "How to show it on video"],
+      "keywords": ["prompt injection"],
+      "visual": "Diagram of README to agent to blocked line.",
+      "why": "Prompt injection is in the sample X keyword table."
+    }
+  ]
+}

@@ -5,7 +5,7 @@ Content day **D = yesterday** in your configured timezone. Everything on X is **
 ## Timeline
 
 1. **~10:00** optional Reddit AI meta (culture heat).
-2. **~10:30 collect D.** Watchlist originals of D (no replies, no reposts) with views. Hits ≥ `min_views`, ★ ≥ `star_views`. **Self-quotes count** like any original and only get a `self_quote: true` + `self_quote_label` badge. Only same-text duplicates go to `excluded_hits`. Plus ~20 outsider AI posts from the last ~48h, and the last-24h timelines of watchlist accounts (raw files in `digests/<D>/_24h/<handle>.json`). Accounts in `trend_input_only` are fetched too (for example an outsider search `from:<handle>`), but only as trend input.
+2. **~10:30 collect D.** Watchlist originals of D (no replies, no reposts) with views. Hits ≥ `min_views`, ★ ≥ `star_views`. **Self-quotes count** like any original and only get a `self_quote: true` + `self_quote_label` badge. Only same-text duplicates go to `excluded_hits`. Plus ~20 outsider posts from the operator's niche in the last ~48h, and the last-24h timelines of watchlist accounts (raw files in `digests/<D>/_24h/<handle>.json`). Accounts in `trend_input_only` are fetched too (for example an outsider search `from:<handle>`), but only as trend input.
 3. **Build `board/data.json` for D** (hits, virals/outsiders, patterns, no_hits, day_roster, you_rank, leaderboards via `board/enrich_leaderboards.py`).
 4. **Prepare the trend layer:** `pipeline/run_day.sh prepare <D>`. It moves trend-input-only posts out of the board lanes, ranks the 24h trend keywords, writes the X keyword search request (16 keywords × 2 windows = 32 searches) and the experiment timeline request, and prints the **TOP-10** posts that need drafts.
 5. **Fetch (read-only):** every call in `digests/<D>/_xkw/request.json` with `search_posts_all` (save each raw result as `digests/<D>/_xkw/<file>`), and, when the experiment is on, the one `get_users_posts` call in `digests/<D>/_exp/request.json` (save as `timeline.json`, follow `next_token` as `timeline__p2.json`). Stay under the rate limits.
@@ -31,7 +31,7 @@ Open `config/watchlist.json` (create it from `config/watchlist.example.json`). R
 
 ## Your board
 
-See `board/SETUP.md` and `docs/marketplace-first-run.md`. Demo board, example only: https://monkeyteamvip.github.io/kiosa-board/
+See [SETUP.md](SETUP.md), `board/SETUP.md`, and `docs/marketplace-first-run.md`. A filled case-study board (not yours, not the default): https://monkeyteamvip.github.io/kiosa-board/
 
 ## Privacy note
 

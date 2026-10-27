@@ -1,5 +1,7 @@
 # First run — your own X Virality Score desk
 
+The full non-expert guide is [SETUP.md](SETUP.md). Watchlist choices: [WATCHLIST.md](WATCHLIST.md). This page is the same work as a short stage list.
+
 Follow this once after you fork or clone [the repo](https://github.com/monkeyteamvip/x-virality-score). When you finish, you have a private watchlist on your machine and a **public board URL that belongs to you**.
 
 https://monkeyteamvip.github.io/kiosa-board/ is a demo case study. Leave it as a picture of what a finished board can look like. Your daily refresh goes to the Pages URL you create in stage 4.
@@ -37,7 +39,7 @@ Agent-side version of this chat: [marketplace-first-run.md](marketplace-first-ru
 
 **What happens.** `config/watchlist.example.json` is the committed starter. Placeholders only: `example_account` and `another_handle`. Your real list is a separate file that git ignores.
 
-**What you do.**
+**What you do.** Read [WATCHLIST.md](WATCHLIST.md) before you fill the list. Optional niche starters live in `config/examples/`.
 
 ```bash
 cp config/watchlist.example.json config/watchlist.json

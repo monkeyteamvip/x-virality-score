@@ -1,0 +1,7 @@
+{
+  "data": [
+    {"id": "501", "text": "Claude Code checklist", "author_id": "u1", "public_metrics": {"impression_count": 15000}},
+    {"id": "502", "text": "Another Claude Code note", "author_id": "u2", "public_metrics": {"impression_count": 8000}}
+  ],
+  "includes": {"users": [{"id": "u1", "username": "sample_builder"}, {"id": "u2", "username": "sample_maker"}]}
+}

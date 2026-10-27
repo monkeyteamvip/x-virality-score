@@ -1,0 +1,62 @@
+{
+  "timezone": "UTC",
+  "min_views": 5000,
+  "star_views": 10000,
+  "lang": "en",
+  "accounts": [
+    {"handle": "robwalling", "notes": "Verified 2026-10-27. About 41,000 followers. Rob Walling, MicroConf and bootstrapped SaaS."},
+    {"handle": "csallen", "notes": "Verified 2026-10-27. About 71,000 followers. Courtland Allen, founder of Indie Hackers. Above the usual peer band."}
+  ],
+  "trend_input_only": [
+    {"handle": "thepatwalls", "notes": "Verified 2026-10-27. About 143,000 followers. Pat Walls. Trend signal only."},
+    {"handle": "IndieHackers", "notes": "Verified 2026-10-27. About 151,000 followers. Publication account. Trend signal only."},
+    {"handle": "yongfook", "notes": "Verified 2026-10-27. About 175,000 followers. Jon Yongfook. Trend signal only."},
+    {"handle": "dannypostma", "notes": "Verified 2026-10-27. About 189,000 followers. Danny Postma. Trend signal only."},
+    {"handle": "bentossell", "notes": "Verified 2026-10-27. About 202,000 followers. Ben Tossell. Trend signal only."},
+    {"handle": "dvassallo", "notes": "Verified 2026-10-27. About 206,000 followers. Daniel Vassallo. Trend signal only."},
+    {"handle": "tdinh_me", "notes": "Verified 2026-10-27. About 206,000 followers. Tony Dinh. Trend signal only."},
+    {"handle": "arvidkahl", "notes": "Verified 2026-10-27. About 214,000 followers. Arvid Kahl. Trend signal only."},
+    {"handle": "marclou", "notes": "Verified 2026-10-27. About 418,000 followers. Marc Lou. Trend signal only."},
+    {"handle": "levelsio", "notes": "Verified 2026-10-27. About 983,000 followers. Pieter Levels. Trend signal only."}
+  ],
+  "keyword_domain_terms": ["saas", "mrr", "bootstrap", "launch", "pricing", "churn", "indie", "founder"],
+  "x_keywords": {
+    "max": 16,
+    "core": [
+      "indie hacker",
+      "MRR",
+      "bootstrapped",
+      "SaaS",
+      "build in public",
+      "churn",
+      "landing page",
+      "Stripe",
+      "launch",
+      "micro SaaS",
+      "solopreneur",
+      "pricing",
+      "cold email",
+      "SEO",
+      "newsletter",
+      "Product Hunt"
+    ],
+    "query_override": {
+      "MRR": "(MRR OR \"$MRR\" OR \"monthly recurring\") (SaaS OR startup OR revenue)",
+      "SEO": "(SEO OR \"search traffic\") (SaaS OR startup OR content)"
+    }
+  },
+  "experiment": {
+    "enabled": false,
+    "handle": "your_handle",
+    "user_id": "",
+    "start": "2026-11-01",
+    "end": "2026-11-07",
+    "baseline_days": 30,
+    "trend_threshold": 35,
+    "min_n": 5,
+    "min_age_h": 24,
+    "hypothesis": "Trend posts beat non-trend posts of the same format"
+  },
+  "board_url": "https://<your-github-user>.github.io/<your-board-repo>/",
+  "_comment": "Optional indie-hacker starter. Famous builders in this niche were well above 50,000 followers on 2026-10-27, so they sit in trend_input_only. Add peers until you have about 15-30 accounts. See docs/WATCHLIST.md."
+}

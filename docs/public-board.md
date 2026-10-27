@@ -2,7 +2,7 @@
 
 ## Personal board (every importer)
 
-Each operator gets **their own** GitHub Pages dashboard. Walkthrough: [first-run.md](first-run.md).
+Each operator gets **their own** GitHub Pages dashboard. Full guide: [SETUP.md](SETUP.md). Stage list: [first-run.md](first-run.md).
 
 1. First chat: collect X handle + watchlist → write `config/watchlist.json` (gitignored; start from `watchlist.example.json`)
 2. Scaffold from repo `board/` (`data.example.json` → gitignored `data.json`, with their `brand_handle` and `operator`)

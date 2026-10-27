@@ -1,0 +1,64 @@
+{
+  "timezone": "UTC",
+  "min_views": 5000,
+  "star_views": 10000,
+  "lang": "en",
+  "accounts": [
+    {"handle": "emilykramer", "notes": "Verified 2026-10-27. About 6,600 followers. Emily Kramer, startup marketing (MKT1)."},
+    {"handle": "davegerhardt", "notes": "Verified 2026-10-27. About 38,000 followers. Dave Gerhardt."},
+    {"handle": "harrydry", "notes": "Verified 2026-10-27. About 48,000 followers. Harry Dry, Marketing Examples."},
+    {"handle": "codyschneider", "notes": "Verified 2026-10-27. About 67,000 followers. Cody Schneider, GTM. Above the usual peer band."},
+    {"handle": "TheCoolestCool", "notes": "Verified 2026-10-27. About 74,000 followers. Ross Simmonds. Above the usual peer band."}
+  ],
+  "trend_input_only": [
+    {"handle": "amandanat", "notes": "Verified 2026-10-27. About 131,000 followers. Amanda Natividad. Trend signal only."},
+    {"handle": "KateBour", "notes": "Verified 2026-10-27. About 151,000 followers. Katelyn Bourgoin. Trend signal only."},
+    {"handle": "nathanbarry", "notes": "Verified 2026-10-27. About 152,000 followers. Nathan Barry. Trend signal only."},
+    {"handle": "Nicolascole77", "notes": "Verified 2026-10-27. About 228,000 followers. Nicolas Cole. Trend signal only."},
+    {"handle": "dickiebush", "notes": "Verified 2026-10-27. About 447,000 followers. Dickie Bush. Trend signal only."},
+    {"handle": "randfish", "notes": "Verified 2026-10-27. About 467,000 followers. Rand Fishkin. Trend signal only."},
+    {"handle": "david_perell", "notes": "Verified 2026-10-27. About 481,000 followers. David Perell. Trend signal only."},
+    {"handle": "thejustinwelsh", "notes": "Verified 2026-10-27. About 593,000 followers. Justin Welsh. Trend signal only."}
+  ],
+  "keyword_domain_terms": ["hook", "headline", "newsletter", "copy", "offer", "audience", "creator", "distribution"],
+  "x_keywords": {
+    "max": 16,
+    "core": [
+      "copywriting",
+      "headline",
+      "newsletter",
+      "personal brand",
+      "content repurposing",
+      "lead magnet",
+      "email list",
+      "offer",
+      "positioning",
+      "case study",
+      "distribution",
+      "SEO",
+      "short form",
+      "creator",
+      "LinkedIn",
+      "hook"
+    ],
+    "query_override": {
+      "hook": "(hook OR headline) (copywriting OR content OR creator)",
+      "SEO": "(SEO OR \"search traffic\") (content OR newsletter OR marketing)",
+      "offer": "(offer OR \"lead magnet\") (email OR creator OR marketing)"
+    }
+  },
+  "experiment": {
+    "enabled": false,
+    "handle": "your_handle",
+    "user_id": "",
+    "start": "2026-11-01",
+    "end": "2026-11-07",
+    "baseline_days": 30,
+    "trend_threshold": 35,
+    "min_n": 5,
+    "min_age_h": 24,
+    "hypothesis": "Trend posts beat non-trend posts of the same format"
+  },
+  "board_url": "https://<your-github-user>.github.io/<your-board-repo>/",
+  "_comment": "Optional marketing/creator starter. Add peers until you have about 15-30 accounts near your size. Handles were public X accounts on 2026-10-27. See docs/WATCHLIST.md."
+}

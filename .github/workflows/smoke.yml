@@ -1,0 +1,13 @@
+name: smoke
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  sample-day:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run the offline sample day
+        run: bash scripts/smoke_day.sh

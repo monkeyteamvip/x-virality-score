@@ -2,13 +2,13 @@
 
 ## Mission
 
-Run a read-only X virality scout for the operator. Every day, produce a digest of high-view **original** posts from `config/watchlist.json`, run a **keyword / pattern** pass (watchlist + outsiders) and rank the last-24h trend keywords, write **Draft rules v4** drafts for the TOP-10 board posts, build **Trends and post ideas** (trend radar, X keyword table, why-it-hit, 5-8 post ideas, 2-3 article ideas), run the optional **experiment tracker**, and surface ~20 outsider AI posts from the last ~48h.
+Run a read-only X virality scout for the operator. Every day, produce a digest of high-view **original** posts from `config/watchlist.json`, run a **keyword / pattern** pass (watchlist + outsiders) and rank the last-24h trend keywords, write **Draft rules v4** drafts for the TOP-10 board posts, build **Trends and post ideas** (trend radar, X keyword table, why-it-hit, 5-8 post ideas, 2-3 article ideas), run the optional **experiment tracker**, and surface ~20 outsider posts from the operator's niche in the last ~48h.
 
 Each importer gets **their own** public dashboard (GitHub Pages), scaffolded from `board/` — not a shared demo board.
 
 ## First run (marketplace / new operator)
 
-Human steps: `docs/first-run.md`. First-chat script: `docs/marketplace-first-run.md`. Pages detail: `board/SETUP.md`.
+Human steps: `docs/SETUP.md` (full guide) and `docs/first-run.md` (stage checklist). Watchlist: `docs/WATCHLIST.md`. First-chat script: `docs/marketplace-first-run.md`. Pages detail: `board/SETUP.md`. English is the default (`lang`: `en`). `ru` is optional.
 
 Walk these stages in order. For each one, say what is happening, what the human provides, and what result they should see.
 
@@ -29,7 +29,7 @@ Walk these stages in order. For each one, say what is happening, what the human 
 - **Keyword / Pattern** - mine recurring phrases, names, structures; rank last-24h trend keywords; feed the draft engine
 - **Trend radar** - `pipeline/`: X keyword table, trends 24/48h, why-it-hit, post / article ideas, experiment, ping
 - **Personal Board** - operator’s own GitHub Pages board from `board/`; surfaces **X Score** + **Day Target**. Demo board is example-only
-- **Optional Reddit Meta** - morning AI culture heat
+- **Optional Reddit Meta** - morning culture check for the niche
 
 ## Hard rules
 
@@ -37,7 +37,7 @@ Walk these stages in order. For each one, say what is happening, what the human 
 2. Originals only. Skip pinned if it is not from the target day.
 3. Run a keyword / pattern pass on watchlist hits **and** outsiders before drafting (`pipeline/drafts.py keywords`).
 4. For each hit include: display name, @handle, views, link, FULL original English text, why-it-hit line, `video_tip`. **Drafts only for the TOP-10** most-viewed board posts (`pipeline/drafts.py top10`), written per `templates/DRAFT_RULES.md` (v4): genuine rewrite, same facts, no new numbers, trend keywords by meaning, short hyphen only, standalone posts, never replies. `pipeline/drafts.py check` must show `rejected=0`.
-5. Include ~20 outsider AI posts from the last ~48h (no older fossils). Write 5-8 post ideas (topic + EN hook + visual + keywords, never text-only, ≥60% on X-table keywords) and 2-3 article ideas in `radar_inputs.json`. Real numbers only; the X keyword table is a sample and must be called one.
+5. Include ~20 outsider posts from the operator's niche in the last ~48h (no older fossils). Write 5-8 post ideas (topic + EN hook + visual + keywords, never text-only, ≥60% on X-table keywords) and 2-3 article ideas in `radar_inputs.json`. Real numbers only; the X keyword table is a sample and must be called one. Verdict labels and the ping follow `lang` (`en` default, `ru` optional). Draft prose stays English per `templates/DRAFT_RULES.md`.
 5b. Self-quotes count everywhere (hits, ★, rankings, TOP-10, radar) and only get a self-quote badge. Only same-text duplicates are excluded. `trend_input_only` accounts are never shown as hits, outsiders, leaderboard rows or drafts.
 6. Deliver digest by 12:00 in the configured timezone when possible.
 7. After each digest, run `pipeline/run_day.sh <D>`, send the ping verbatim from `digests/<D>/PING.txt` (format in `templates/DIGEST_TEMPLATE.md`), and refresh **their** personal board (not the shared demo).

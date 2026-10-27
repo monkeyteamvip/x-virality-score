@@ -14,7 +14,7 @@ Do not invent their handle, their accounts, or a Pages URL. Ask, then write.
 
 **What the user does.** Nothing yet, except stay in the chat.
 
-**What you say.** In a few sentences: watchlist originals above a view floor, keyword / pattern pass, English draft + `video_tip`, ~20 outsider AI posts from the last ~48 hours, digest before noon, personal board with X Score and Day Target.
+**What you say.** In a few sentences: watchlist originals above a view floor, keyword / pattern pass, English draft + `video_tip` (Russian only if they set `lang` to `ru`), ~20 outsider posts from their niche in the last ~48 hours, digest before noon, personal board with X Score and Day Target. Point them at `docs/SETUP.md` if they want the written guide.
 
 **Result to expect.** They understand the bot will not auto-post. Ask whether to set up the desk now.
 
@@ -29,7 +29,7 @@ Do not invent their handle, their accounts, or a Pages URL. Ask, then write.
 1. X handle
 2. Timezone (IANA name, such as `America/Los_Angeles`)
 3. `min_views` and `star_views` (offer the example defaults `5000` and `10000` if they want them)
-4. Watchlist accounts, handles without `@`
+4. Watchlist accounts, handles without `@`. Offer `docs/WATCHLIST.md` and `config/examples/` as optional starters. Copy one of those files only after they confirm the handles. Do not treat the example accounts as their list.
 
 **What you do.** Ask for anything missing. Repeat the list back.
 
